@@ -15,7 +15,7 @@ deployment in Kubernetes), typically per cluster, per data center or per region.
 In the general case you can use an out-of-the-box load balancer to distribute
 the load amongst the collectors:
 
-![Gateway deployment concept](../../img/otel-gateway-sdk.svg)
+![Gateway deployment concept](../img/otel-gateway-sdk.svg)
 
 For use cases where the processing of the telemetry data processing has to
 happen in a specific collector, you would use a two-tiered setup with a
@@ -28,7 +28,7 @@ same collector instance where the tail sampling policy is applied.
 
 Let's have a look at such a case where we are using the load-balancing exporter:
 
-![Gateway deployment with load-balancing exporter](../../img/otel-gateway-lb-sdk.svg)
+![Gateway deployment with load-balancing exporter](../img/otel-gateway-lb-sdk.svg)
 
 1. In the app, the SDK is configured to send OTLP data to a central location.
 2. A collector configured using the load-balancing exporter that distributes
